@@ -1,4 +1,4 @@
-﻿# Python C# Test Templates
+﻿# Python Test Templates
 
 This project aims to provide some very basic test templates coded in Python focused on Unit, Component and Integration tests.
 
