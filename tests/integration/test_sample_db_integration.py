@@ -1,10 +1,9 @@
 
 import pymongo
-
 from pymongo.errors import ServerSelectionTimeoutError
 ""
 
-def test_mongodb_availability_status_code_equals_200():
+def test_mongodb_integration_status_code_equals_200():
 
     connected = True
 
