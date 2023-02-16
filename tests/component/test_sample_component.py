@@ -21,5 +21,5 @@ def test_simple_get_component_test_equals_200():
     assert json_object["userId"] == 1
     assert json_object["id"] == 1
     assert json_object["title"] == "delectus aut autem"
-    assert json_object["completed"] == "false"
+    assert json_object["completed"] == False
 
