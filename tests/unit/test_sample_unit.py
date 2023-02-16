@@ -1,19 +1,23 @@
-import json
+import unittest
 
-def test_simple_unit_test_equals_201():
+class MainClass:
+    def __init__(self, name):
+        self.name = name
 
-    # Arrange
-    # As example, add some file as start point (setup) for the tests
+    def showCompleteName(self):
+        return "Selected name is: {}".format(self.name)
 
-    with open('') as file:
-        file_data = json.load(file)
+def inputName():
+    name = MainClass("Andre Rodrigues")
+    return name.showCompleteName()
 
-    # Act
-    # Call your method to be tested passing the initial file (or variables, etc)
-    msg, error = call_method_to_be_tested(file_data)
+from unittest.mock import patch
 
-    # Assert
-    # Check the status code and message not empty
-    assert error == 201
-    assert msg != ""
+class TestMainClass(unittest.TestCase):
 
+    def test_input_name(self):
+        with patch.object(MainClass, 'showCompleteName', return_value="Mocked Object Succesfully"):
+            assert inputName() == "Mocked Object Succesfully"            
+
+if __name__ == '__main__':
+    unittest.main()
