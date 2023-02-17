@@ -4,9 +4,9 @@ This project aims to provide some very basic test templates coded in Python focu
 
 ## Requirements
 
-Python
-Unittest
-Pytest
+- Python
+- Unittest
+- Pytest
 
 ## Getting Started
 
